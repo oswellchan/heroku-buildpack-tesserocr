@@ -40,5 +40,6 @@ echo "export TESSDATA_PREFIX=\"$TRAINING_DATA_DIR/\"" >> $ENVSCRIPT
 
 echo "Installing tesserocr and dependencies"
 CPPFLAGS="-I/$INSTALL_DIR/incude -L/$INSTALL_DIR/lib"
+printenv
 pip install cython==0.25.2
 pip install tesserocr==2.1.3
